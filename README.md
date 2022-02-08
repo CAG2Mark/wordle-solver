@@ -13,7 +13,9 @@ so that it can solve the problem by just guessing, it does
 exactly that.
 
 (NOTE: this was built completely using my own ideas. I did
-not watch any tutorial or any video to get the idea.)
+not watch any tutorial or any video to get the idea. It was
+only after I showed it to some friends that they showed me
+a 3Blue1Brown video on it :P)
 
 # How to use
 Simply type in the word it gives you each time into Wordle.
