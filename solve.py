@@ -122,6 +122,7 @@ while i < 6:
 
     if feedback == "skip":
         words.remove(guess)
+        words_og.remove(guess)
         continue
 
     for i, ch in enumerate(feedback):
