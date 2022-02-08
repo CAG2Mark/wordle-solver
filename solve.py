@@ -77,7 +77,9 @@ def find_max():
     max_word = ""
 
     if elim_mode:
-        return find_elim()
+        # return find_elim()
+        potential = find_elim()
+        if potential: return potential
     
     for w in words:
         # only consider characters' weight once to encourage distinct characters
@@ -106,11 +108,10 @@ while i < 6:
     filter_words()
 
     elim_mode = not will_win \
-            and (len(correct) == 3 or len(correct) == 4) \
-            and len(words) > (5-i) \
+            and (2 <= len(correct) <= 4) \
             and not len(words) == 1
     
-    # if elim_mode: print("NOTE: in elimination mode.")
+    if elim_mode: print("NOTE: in elimination mode.")
 
     guess = find_max()
 
