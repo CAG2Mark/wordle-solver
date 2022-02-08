@@ -94,6 +94,7 @@ def find_max():
 
     return max_word
 
+first = True
 debug_first = False
 will_win = False
 
@@ -112,6 +113,9 @@ while i < 6:
     # if elim_mode: print("NOTE: in elimination mode.")
 
     guess = find_max()
+
+    if first: guess = "crane"
+    first = False
     
     # if debug_first:
     #    print(correct, wrong, exists, words)
@@ -121,7 +125,8 @@ while i < 6:
     feedback = input("FEEDBACK:\t\t")
 
     if feedback == "skip":
-        words.remove(guess)
+        if guess in words:
+            words.remove(guess)
         words_og.remove(guess)
         continue
 
