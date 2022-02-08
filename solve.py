@@ -1,8 +1,9 @@
 from collections import defaultdict
 
 word_f = open("words")
+possible_f = open("possible_words")
 words_og = [x.strip() for x in word_f.readlines()]
-words = words_og.copy()
+words = [x.strip() for x in possible_f.readlines()]
 
 chars = defaultdict(lambda: 0)
 
