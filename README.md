@@ -12,8 +12,6 @@ Once it is confident enough it has enough attempts remaining
 so that it can solve the problem by just guessing, it does 
 exactly that.
 
-Word list is from: http://www.mieliestronk.com/wordlist.html
-
 # How to use
 Simply type in the word it gives you each time into Wordle.
 
