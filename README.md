@@ -12,6 +12,9 @@ Once it is confident enough it has enough attempts remaining
 so that it can solve the problem by just guessing, it does 
 exactly that.
 
+(NOTE: this was built completely using my own ideas. I did
+not watch any tutorial or any video to get the idea.)
+
 # How to use
 Simply type in the word it gives you each time into Wordle.
 
